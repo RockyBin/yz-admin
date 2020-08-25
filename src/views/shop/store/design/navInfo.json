@@ -1,0 +1,56 @@
+{
+  "id": 6,
+  "background": "rgba(255,255,255,1)",
+  "normal_color": "rgba(0,0,0,1)",
+  "active_color": "rgba(237,64,20,1)",
+  "items": [
+    {
+      "id": 1,
+      "icon_type": 0,
+      "icon": "icon-shouye",
+      "image": null,
+      "image_active": null,
+      "name": "首页",
+      "link_type": "home",
+      "link_data": null,
+      "link_url": "#/",
+      "link_desc": "链接到 店铺主页"
+    },
+    {
+      "id": 2,
+      "icon_type": 0,
+      "icon": "icon-list1",
+      "image": null,
+      "image_active": null,
+      "name": "购物车",
+      "link_type": "product_class",
+      "link_data": null,
+      "link_url": "#/product/product-class",
+      "link_desc": "链接到 商品分类"
+    },
+    {
+      "id": 3,
+      "icon_type": 0,
+      "icon": "icon-gouwuche",
+      "image": null,
+      "image_active": null,
+      "name": "分类",
+      "link_type": "shopping_cart",
+      "link_data": null,
+      "link_url": "#/product/shopping-cart",
+      "link_desc": "链接到 购物车"
+    },
+    {
+      "id": 4,
+      "icon_type": 0,
+      "icon": "icon-geren-geren",
+      "image": null,
+      "image_active": null,
+      "name": "订单",
+      "link_type": "order_list",
+      "link_data": null,
+      "link_url": "#/member/memberOrder",
+      "link_desc": "链接到 订单列表"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+html,
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+.ivu-modal-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(135, 135, 135);
+  background-color: rgba(55, 55, 55, 0.6);
+  height: 100%;
+  z-index: 1000;
+}
+.ivu-modal-wrap {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.ivu-modal {
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  outline: none;
+  top: 100px;
+}
+.ivu-modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  border-radius: 6px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 
+  *
+  * 以下css可以复制@/components/checkBrowser.vue的less内容到在线转换工具转成css 
+*/
+.check-browser .ivu-modal .ivu-modal-content {
+  border-radius: 0;
+}
+.check-browser .ivu-modal .ivu-modal-content .ivu-modal-body {
+  padding: 0;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-content {
+  width: 800px;
+  height: 400px;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-content
+  .check-browser-title {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px 0 15px;
+  font-size: 14px;
+  color: #999;
+  background-color: #f9f9f9;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-content
+  .check-browser-title
+  i.iconfont {
+  font-size: 32px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  float: right;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body {
+  text-align: center;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-tip {
+  margin-top: 45px;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-tip
+  p:first-child {
+  position: relative;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 18px;
+  color: #333;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-tip
+  p:first-child
+  i {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  left: -33px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-tip
+  p
+  + p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 11px;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type {
+  margin-top: 30px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 0;
+  width: 685px;
+  height: 152px;
+  box-sizing: border-box;
+  padding: 28px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type
+  .check-browser-type-item {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 140px;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type
+  .check-browser-type-item:first-child {
+  width: 125px;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type
+  .check-browser-type-item:first-child
+  div {
+  font-size: 16px;
+  color: #fff;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type
+  .check-browser-type-item
+  div {
+  font-size: 14px;
+  color: #8e96ba;
+}
+.check-browser
+  .ivu-modal
+  .ivu-modal-content
+  .ivu-modal-body
+  .check-browser-body
+  .check-browser-type
+  .check-browser-type-item
+  div:first-child {
+  width: 64px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}

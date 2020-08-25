@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../internal.js"></script>
+    <link rel="stylesheet" type="text/css" href="video.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div id="videoTab">
+        <div id="tabHeads" class="tabhead">
+            <span tabSrc="video" class="focus" data-content-id="video"><var id="lang_tab_insertV"></var></span>
+            <span tabSrc="upload" data-content-id="upload" style="display:none;"><var id="lang_tab_uploadV"></var></span>
+        </div>
+        <div id="tabBodys" class="tabbody">
+            <textarea class="txt" id="videoUrl" type="text" value=""></textarea>
+        </div>
+    </div>
+</div>
+<!-- webuploader -->
+<!-- video -->
+</body>
+<script type="text/javascript">
+  dialog.onok = handleDialogOk;
+  function handleDialogOk() {
+    editor.execCommand('inserthtml',$G('videoUrl').value)
+  }
+</script>
+</html>

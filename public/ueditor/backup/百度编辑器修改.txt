@@ -1,0 +1,75 @@
+
+ueditor.config.js
+
+1. 将serverUrl注释掉
+2. enableAutoSave 自动保存一项，从默认值true改为false , saveInterval:99999999999999
+3. zIndex 层高一项，从默认值900改为0
+4. toolbars数组，注释了  'simpleupload','insertimage' 两项
+5. elementPathEnabled 元素路径  注释变成false
+6. wordCount 字数统计 注释变成false
+7. autoHeightEnabled 自动长高 注释变为false
+8. initialContent 注释变为 ：'' 
+
+添加按钮，addButtons.js中，添加了图片选择
+
+-----------------------------------------------------
+自动加P的解决方法
+
+百度的Ueditor编辑器出于安全xìng考虑，用户在html模式下粘贴进去的html文档会自动被去除样式和转义。虽然安全的，但是非常不方便。 
+做一下修改把这个功能去掉。 
+一、打开ueditor.all.js 
+二、大概9300行找到 ///plugin 编辑器默认的过滤转换机制，把下面的
+'allowDivTransToP':true<畅互扳就殖脚帮协爆茅br />
+值改成false。为true的时候会自动把div转成p。 
+三、大概9429行，有个case 'li'，这个是把li里面的样式去掉，把这个case注释掉。 
+四、大概14058行，下面的第一个utils.each功能注释掉，这个是自动给li里面的内容增加一个p。 
+五、大概14220行，
+node.className = utils.trim(node.className.replace(/list-paddingleft-\w+/,'')) + ' list-paddingleft-' + type;
+
+注释掉，这个是自动给ul增加一个内置的样式。 
+下面的14222行
+li.style.cssText && (li.style.cssText = '');
+
+注释掉，这个是自动去除粘贴进去的代码的li的style样式 
+
+至此，我们粘贴进去的html格式的ul和li就不会被转义了。
+
+
+---------------------------------------
+自动生成&nbsp;解决方法：
+
+在ueditor.all.js文件找到上述所示代码，将&nbsp;替换为‘
+ ’即可。如下所示：
+
+function isText(node, arr) {
+
+        if(node.parentNode.tagName == 'pre'){
+            //源码模式下输入html标签，不能做转换处理，直接输出
+            arr.push(node.data)
+        }else{
+            arr.push(notTransTagName[node.parentNode.tagName] ? utils.html(node.data) : node.data.replace(/[ ]{2}/g,'&nbsp'))
+        }
+
+}
+
+
+--------------------------
+ueditor.all.min.js 与 ueditor.all.min.full.js 的区别
+将 ueditor.all.min.js 中的 .body 替换为 .documentElement 得到 ueditor.all.min.full.js
+min.full.js 可输入完整的HTML, min.js 因为使用 me.body.innerHTML,编辑器内的head,body等标签天生就会被浏览器过滤
+
+--------------------------
+ueditor.all.js 和 ueditor.all.min.js 和 ueditor.all.min.full.js
+14503行：
+        pastebin.style.cssText = "position:absolute;width:1px;height:1px;overflow:hidden;left:-1000px;white-space:nowrap;top:" +
+            //要在现在光标平行的位置加入，否则会出现跳动的问题
+            domUtils.getXY(bk.start).y + 'px';
+变成：
+	pastebin.style.cssText = "position:absolute;width:1px;height:1px;overflow:hidden;left:-1000px;top:" +
+            //要在现在光标平行的位置加入，否则会出现跳动的问题
+            domUtils.getXY(bk.start).y + 'px';
+
+去掉了 white-space:nowrap;
+
+
+

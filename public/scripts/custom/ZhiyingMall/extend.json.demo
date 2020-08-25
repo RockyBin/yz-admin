@@ -1,0 +1,33 @@
+{
+	"vueRouter": {
+		"routes": [
+			{
+				"path": "/member/detail/extend",
+				"name": "memberDetailExtend",
+				"component": "shop/member/member-detail-extend.vue"
+			},
+			{
+				"path": "/member/sum",
+				"name": "memberSum",
+				"component": "shop/member/member-detail-extend.vue"
+			}
+		],
+		"rules": []
+	},
+	"menu": {
+		"add": [
+			{
+				"path": "/member/sum",
+				"pathdesc": "path 为这个路由的径，要与上面 routes 中定义的路径一致",
+				"meta": {
+					"title": "会员统计",
+					"parent": "member",
+					"parentdesc": "这个菜单要加到哪个组，如果是主菜单，填写 root，可用 console.log(this.$store.state.Menus) 来查看菜单组的情况"
+				}
+			}
+		],
+		"remove": [
+			"请填写要删除的菜单的路由名称"
+		]
+	}
+}

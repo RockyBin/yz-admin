@@ -1,0 +1,112 @@
+/*通用样式*/
+* {
+    padding: 0;
+    margin: 0;
+}
+#module-list {
+    position: relative;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.hidden{display: none;}
+.flexBox {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flexDirectionRow {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+}
+.flexDirectionColumn {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+.flexJustify {
+    /* 09版 */
+    -webkit-box-pack: center;
+    /* 12版 */
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+}
+.flexJustifyBetween {
+    /* 12版 */
+    -webkit-justify-content:space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+.overflowAutos{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.flexAlign {
+    /* 09版 */
+    -webkit-box-align: center;
+    /* 12版 */
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.flexFlow{
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.alignContentStare{
+    -webkit-align-content: flex-start;
+    -moz-align-content: flex-start;
+    -ms-align-content: flex-start;
+    -o-align-content: flex-start;
+    align-content: flex-start;
+}
+.transformlateY{
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.boxSizingBox{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.fixed-top{
+	position: fixed!important;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.fixed-top-edit{
+	position: fixed!important;
+    /* top: 0; */
+    z-index:100;
+    width: 367px;
+    box-sizing: border-box;
+}
+.module-item {
+    position: relative;
+    text-align: left;
+}

@@ -1,0 +1,79 @@
+.tbChooseWay-box {
+  width: 824px;
+  margin: 158px auto;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  .onilne-issue{
+    margin-right: 24px;
+  }
+  .onilne-issue,
+  .manual-issue {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    padding-top: 37px;
+    padding-left: 34px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #DCDEE2;
+    border-radius: 5px;
+  }
+  .manual-issue{
+    .manual-issue-left{
+      padding-top: 15px;
+    }
+  }
+  .onilne-issue:hover,
+  .manual-issue:hover {
+    background: #f6f8fb;
+  }
+  .online-issue-left, .manual-issue-left {
+    margin-right: 28px;
+  }
+  .online-issue-title, .manual-issue-title {
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #464C5B;
+    margin-bottom: 6px;
+    a {
+      margin-left: 6px;
+    }
+    .ivu-icon-help-circled {
+      font-size: 14px;
+      color: #ccc;
+    }
+  }
+  .online-issue-tip, .manual-issue-tip {
+    font-size: 12px;
+    color: #657180;
+    margin-bottom: 20px;
+  }
+}
+.foot-button {
+  position: fixed;
+  bottom: 10px;
+  height: 50px;
+  line-height: 50px;
+  width: calc(100% - 260px);
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid #eee;
+  z-index: 100;
+  left: 250px;
+  button {
+    width: 70px;
+    height: 32px;
+    border: 1px solid #DCDEE2;
+    background-color: #fff;
+    color: #464C5B;
+    border-radius: 15px;
+  }
+  .ivu-btn-primary:hover{
+    background-color: #fff;
+    border-color: #DCDEE2;
+    color: #464C5B;
+  }
+}

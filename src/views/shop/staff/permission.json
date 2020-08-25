@@ -1,0 +1,535 @@
+[
+  {
+    "category": "店铺",
+    "key":"storePermission",
+    "subCategory": [
+      {
+        "title": "店铺导航",
+        "view": "nav.view",
+        "operate": "nav.operate"
+      },
+      {
+        "title": "店铺色系",
+        "view": "color.view",
+        "operate": "color.operate"
+      },
+      {
+        "title": "海报列表",
+        "view": "poster.view",
+        "operate": "poster.operate"
+      },
+      {
+        "title": "海报设置",
+        "view": "poster.config.view",
+        "operate": "poster.config.operate"
+      },
+      {
+        "title": "页面管理",
+        "view": "page.view",
+        "operate": "page.operate"
+      }
+    ]
+  },
+  {
+    "category": "广告屏",
+    "key":"bigscreenPermission",
+    "subCategory": [
+      {
+        "title": "广告屏装修",
+        "view": "bigscreen.page.view",
+        "operate": "bigscreen.page.operate"
+      },
+      {
+        "title": "广告屏导航",
+        "view": "bigscreen.nav.view",
+        "operate": "bigscreen.nav.operate"
+      }
+      ,
+      {
+        "title": "广告屏弹窗",
+        "view": "bigscreen.popup.view",
+        "operate": "bigscreen.popup.operate"
+      }
+      ,
+      {
+        "title": "广告屏APP",
+        "view": "bigscreen.app.view",
+        "operate": "bigscreen.app.operate"
+      }
+    ]
+  },
+  {
+    "category": "商品",
+    "key":"productPermission",
+    "subCategory": [
+      {
+        "title": "商品列表",
+        "view": "product.view",
+        "operate": "product.operate"
+      },
+      {
+        "title": "商品分类",
+        "view": "product.class.view",
+        "operate": "product.class.operate"
+      },
+      {
+        "title": "商品参数",
+        "view": "product.param.view",
+        "operate": "product.param.operate"
+      },
+      {
+        "title": "商品评价",
+        "view": "product.comment.view",
+        "operate": "product.comment.operate"
+      }
+    ]
+  },
+  {
+    "category": "订单",
+    "key":"orderPermission",
+    "subCategory": [
+      {
+        "title": "商城订单",
+        "view": "order.view",
+        "operate": "order.operate"
+      },
+      {
+        "title": "售后订单",
+        "view": "order.after-sale.view",
+        "operate": "order.after-sale.operate"
+      }
+    ]
+  },
+  {
+    "category": "会员",
+    "key":"memberPermission",
+    "subCategory": [
+      {
+        "title": "会员列表",
+        "view": "member.view",
+        "operate": "member.operate"
+      },
+      {
+        "title": "会员导出",
+        "operate": "member.export.operate"
+      },
+      {
+        "title": "粉丝列表",
+        "view": "fans.view",
+        "operate": "fans.operate"
+      },
+      {
+        "title": "会员等级",
+        "view": "member.level.view",
+        "operate": "member.level.operate"
+      },
+      {
+        "title": "会员标签",
+        "view": "member.label.view",
+        "operate": "member.label.operate"
+      },
+      {
+        "title": "会员详情",
+        "view": "member.detail.view",
+        "operate": "member.detail.operate"
+      }
+    ]
+  },
+  {
+    "category": "分销",
+    "key":"distributePermission",
+    "subCategory": [
+      {
+        "title": "分销商列表",
+        "view": "distributor.view",
+        "operate": "distributor.operate"
+      },
+      {
+        "title": "分销商审核",
+        "view": "distributor.review.view",
+        "operate": "distributor.review.operate"
+      },
+      {
+        "title": "分销商设置",
+        "view": "distributor.config.view",
+        "operate": "distributor.config.operate"
+      },
+      {
+        "title": "分销商等级",
+        "view": "distributor.level.view",
+        "operate": "distributor.level.operate"
+      }
+    ]
+  },
+  {
+    "category": "代理分红",
+    "key": "agentPermission",
+    "subCategory": [
+      {
+        "title": "代理列表",
+        "view": "agent.view",
+        "operate": "agent.operate"
+      },
+      {
+        "title": "团队业绩",
+        "view": "agent.performance.view",
+        "operate": "agent.performance.operate"
+      },
+      {
+        "title": "代理审核",
+        "view": "agent.review.view",
+        "operate": "agent.review.operate"
+      },
+      {
+        "title": "代理设置",
+        "view": "agent.config.view",
+        "operate": "agent.config.operate"
+      }
+    ]
+  },
+  {
+    "category": "区域代理",
+    "key": "areaagentPermission",
+    "subCategory": [
+      {
+        "title": "区代列表",
+        "view": "area.agent.view",
+        "operate": "area.agent.operate"
+      },
+      {
+        "title": "区代业绩",
+        "view": "area.agent.performance.view",
+        "operate": "area.agent.performance.operate"
+      },
+      {
+        "title": "区代审核",
+        "view": "area.agent.apply.view",
+        "operate": "area.agent.apply.operate"
+      },
+      {
+        "title": "区代等级",
+        "view": "area.agent.level.view",
+        "operate": "area.agent.level.operate"
+      },
+      {
+        "title": "区代设置",
+        "view": "area.agent.config.view",
+        "operate": "area.agent.config.operate"
+      }
+    ]
+  },
+  {
+    "category": "经销商云仓",
+    "key": "cloudStockPermission",
+    "subCategory": [
+      {
+        "title": "经销商等级",
+        "view": "dealer.level.view",
+        "operate": "dealer.level.operate"
+      },
+      {
+        "title": "经销商列表",
+        "view": "dealer.view",
+        "operate": "dealer.operate"
+      },
+      {
+        "title": "云仓订单",
+        "view": "cloudstock.order.view",
+        "operate": "cloudstock.order.operate"
+      },
+      {
+        "title": "经销商业绩",
+        "view": "dealer.performance.view",
+        "operate": "dealer.performance.operate"
+      },
+      {
+        "title": "经销商审核",
+        "view": "dealer.review.view",
+        "operate": "dealer.review.operate"
+      },
+      {
+        "title": "经销商设置",
+        "view": "dealer.config.view",
+        "operate": "dealer.config.operate"
+      },
+      {
+        "title": "授权证书",
+	      "key": "dealerPermission.authCert",
+        "view": "dealer.authcert.view",
+        "operate": "dealer.authcert.operate"
+      },
+      {
+        "title": "授权邀请",
+	"key": "dealerPermission.dealerInvite",
+        "view": "dealer.dealerinvite.view",
+        "operate": "dealer.dealerinvite.operate"
+      }
+    ]
+  },
+  {
+    "category": "供应商管理",
+    "key": "supplierPermission",
+    "subCategory": [
+      {
+        "title": "供应商列表",
+        "view": "supplier.list.view",
+        "operate": "supplier.list.operate"
+      },
+      {
+        "title": "供应商设置",
+        "view": "supplier.config.view",
+        "operate": "supplier.config.operate"
+      }
+    ]
+  },
+  {
+    "category": "财务",
+    "key":"financePermission",
+    "subCategory": [
+      {
+        "title": "收支明细",
+        "tip":"此处的操作权限同步控制【售后订单-退款审核】。",
+        "view": "finance.view",
+        "operate": "finance.operate"
+      },
+      {
+        "title": "提现管理",
+        "view": "withdraw.view",
+        "operate": "withdraw.operate"
+      },
+      {
+        "title": "余额管理",
+        "view": "balance.view",
+        "operate": "balance.operate"
+      },
+      {
+        "key":"financePermission.distribution",
+        "title": "分销结算",
+        "view": "commission.view",
+        "operate": "commission.operate"
+      },
+      {
+        "key":"financePermission.agent",
+        "title": "代理结算",
+        "view": "agent.commission.view",
+        "operate": "agent.commission.operate"
+      },
+      {
+        "key":"financePermission.cloudstock",
+        "title": "经销商结算",
+        "view": "cloudstock.settle.view",
+        "operate": "cloudstock.settle.operate"
+      },
+      {
+        "key":"financePermission.areaagent",
+        "title": "区代结算",
+        "view": "area.agent.settle.view",
+        "operate": "area.agent.settle.operate"
+      },
+      {
+        "key":"financePermission.supplier",
+        "title": "供应商结算",
+        "view": "supplier.settle.view",
+        "operate": "supplier.settle.operate"
+      }
+    ]
+  },
+  {
+    "category": "营销应用",
+    "key":"marketingPermission",
+    "subCategory": [      
+      {
+        "title": "多人拼团",
+        "key": "marketingPermission.groupBuying",
+        "view": "group.buying.view",
+        "operate": "group.buying.operate"
+      },
+      {
+        "title": "积分管理",
+        "view": "point.view",
+        "operate": "point.operate"
+      },
+      {
+        "title": "优惠券管理",
+        "view": "coupon.view",
+        "operate": "coupon.operate"
+      },
+      {
+        "title": "充值优惠",
+        "key": "marketingPermission.rechargeBonus",
+        "view": "rechargebonus.view",
+        "operate": "rechargebonus.operate"
+      },
+      {
+        "title": "防伪码管理",
+        "key": "securityPermission",
+        "view": "security.view",
+        "operate": "security.operate"
+      },
+      {
+        "title": "包邮活动",
+        "key": "freeShippingPermission",
+        "view": "free.shipping.view",
+        "operate": "free.shipping.operate"
+      },
+      {
+        "title": "快递发货应用",
+        "key": "expressPermission",
+        "view": "express.view",
+        "operate": "express.operate"
+      }
+    ]
+  },
+  {
+    "category": "直播互动",
+    "key":"livePermission",
+    "subCategory": [
+      {
+        "title": "直播间管理",
+        "view": "live.view",
+        "operate": "live.operate"
+      }
+    ]
+  },
+  {
+    "category": "员工CRM",
+    "key":"staffPermission",
+    "subCategory": [
+      {
+        "title": "员工管理",
+        "view": "staff.view",
+        "operate": "staff.operate"
+      },
+      {
+        "title": "部门管理",
+        "view": "department.view",
+        "operate": "department.operate"
+      },
+      {
+        "title": "流量分配",
+        "view": "staff.allocate.view",
+        "operate": "staff.allocate.operate"
+      },
+      {
+        "title": "角色权限",
+        "view": "role.view",
+        "operate": "role.operate"
+      }
+    ]
+  },
+  {
+    "category": "渠道",
+    "key":"channelPermission",
+    "subCategory": [
+      {
+        "title": "公众号菜单",
+        "view": "mp.menu.view",
+        "operate": "mp.menu.operate"
+      },
+      {
+        "title": "公众号自动回复",
+        "view": "mp.reply.view",
+        "operate": "mp.reply.operate"
+      },
+      {
+        "title": "公众号素材管理",
+        "view": "mp.media.view",
+        "operate": "mp.media.operate"
+      },
+      {
+        "title": "公众号管理",
+        "view": "mp.config.view",
+        "operate": "mp.config.operate"
+      },
+      {
+        "title": "H5设置",
+        "view": "h5.config.view",
+        "operate": "h5.config.operate"
+      },
+      {
+        "title": "微信小程序",
+        "view": "wxapp.config.view",
+        "operate": "wxapp.config.operate",
+        "key": "channelPermission.wxapp"
+      },
+      {
+        "title": "企业微信",
+        "view": "wxwork.config.view",
+        "operate": "wxwork.config.operate",
+        "key": "channelPermission.wxwork"
+      }
+    ]
+  },
+  {
+    "category": "设置",
+    "key":"settingPermission",
+    "subCategory": [
+      {
+        "title": "商城设置",
+        "view": "shop.config.view",
+        "operate": "shop.config.operate"
+      },
+      {
+        "title": "支付设置",
+        "view": "pay.config.view",
+        "operate": "pay.config.operate"
+      },
+      {
+        "title": "订单设置",
+        "view": "order.config.view",
+        "operate": "order.config.operate"
+      },
+      {
+        "title": "物流设置",
+        "view": "logistics.view",
+        "operate": "logistics.operate"
+      },
+      {
+        "title": "提现设置",
+        "view": "withdraw.config.view",
+        "operate": "withdraw.config.operate"
+      },
+      {
+        "title": "文字设置",
+        "view": "word.view",
+        "operate": "word.operate"
+      },
+      {
+        "title": "商户设置",
+        "view": "store.config.view",
+        "operate": "store.config.operate"
+      },
+      {
+        "title": "通用设置",
+        "view": "site.config.view",
+        "operate": "site.config.operate"
+      },
+      {
+	"key":"settingPermission.copyright",
+        "title": "版权设置",
+        "view": "copyright.config.view",
+        "operate": "copyright.config.operate"
+      },
+      {
+        "title": "第三方客服",
+        "view": "site.config.view",
+        "operate": "site.config.operate"
+      },
+      {
+        "title": "SSL证书",
+        "view": "ssl.config.view",
+        "operate": "ssl.config.operate"
+      },
+      {
+        "title": "消息通知",
+        "view": "notice.config.view",
+        "operate": "notice.config.operate"
+      },
+      {
+        "title": "短信设置",
+        "view": "sms.config.view",
+        "operate": "sms.config.operate"
+      }
+    ]
+  }
+]

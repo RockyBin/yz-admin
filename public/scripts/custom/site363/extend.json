@@ -1,0 +1,17 @@
+{
+  "vueRouter": {
+    "routes": [
+      {
+        "path": "/member/detail/extend",
+        "name": "memberDetailExtend",
+        "component": "shop/member/member-detail-extend.vue"
+      }
+    ],
+    "rules": [
+      {
+        "from": "memberDetail",
+        "to": "memberDetailExtend"
+      }
+    ]
+  }
+}
